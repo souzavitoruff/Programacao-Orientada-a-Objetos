@@ -15,6 +15,8 @@ public class Main {
         minhaAgenda.imprimeContato("Vitor Souza");
         minhaAgenda.imprimeContato("Vania Neves");
         minhaAgenda.imprimeContato("Vitor Souza");
+    
+        minhaAgenda.apagarContato(vitor);
 
     }
 }

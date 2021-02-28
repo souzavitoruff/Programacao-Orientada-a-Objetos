@@ -14,4 +14,13 @@ public class Agenda {
             }
         }
     }
+
+    void apagarContato(Contato contato){
+        for(int i = 0; i < qtdContatos; i++){
+            if(contatos[i] == contato){
+                contatos[i] = null;
+            }
+        }
+        System.out.println("O contato foi apagado.");
+    }
 }
