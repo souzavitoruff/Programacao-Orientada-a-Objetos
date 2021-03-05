@@ -15,7 +15,11 @@ public class Data {
         this.mesInt = mes;
         this.ano = ano;
         this.mesString = this.mesesDoAno[mesInt - 1];
-        this.diasCompletos = (this.mesInt * 30) + this.dia;
+        if(mesInt == 1){
+            this.diasCompletos = this.dia;
+        }else{
+            this.diasCompletos = ((this.mesInt - 1) * 30) + this.dia;
+        }
     }
 
     Data(String mesString, int dia, int ano){
